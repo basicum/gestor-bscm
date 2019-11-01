@@ -60,11 +60,11 @@ class HomeController extends Controller
         /**
          * Controlador para Clientes
          */
-        $clientes = new ClientesController();
+        $clientes = new TercerosController();
         $clientes->clientesTotal(1);
         $clientes=count($clientes->clientes);
 
-        $clientes_user = new ClientesController();
+        $clientes_user = new TercerosController();
         $clientes_user->clientesUser($currante);
         /**
          * Controlador para Facturación

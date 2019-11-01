@@ -7,9 +7,21 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
-class ClientesController extends Controller
+class TercerosController extends Controller
 {
     //
+    public function todosTerceros()
+    {
+        $terceros = DB::table('TERCEROS')
+            ->orderBy('dmacreacion', 'desc')
+            ->get();
+
+        $this->terceros = $terceros;
+
+        return view('terceros', compact('terceros'));
+    }
+
+
     public function clientesTotal($i){
 
         $clientes = DB::table('TERCEROS')

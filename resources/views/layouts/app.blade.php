@@ -1,3 +1,7 @@
+@if (Auth::guest())
+    <li><a href="{{ url('/login') }}">Login</a></li>
+    {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
+@else
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,14 +23,14 @@
     <style type="text/css">/* Chart.js */
         @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style>
 </head>
-<body class="boxed-layout sidebar-dark">
-
+<body class="sidebar-fixed">
+<div class="loader"></div>
 <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row navbar-dark">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-            <a class="navbar-brand brand-logo mr-5" href="/"><img src="img/logo.svg" class="mr-2" alt="logo"></a>
-            <a class="navbar-brand brand-logo-mini" href="{{ url('/') }}"><img src="img/logo-mini.svg" alt="logo"></a>
+            <a class="navbar-brand brand-logo mr-5" href="/"><img src="img/logo-basicum.jpg" class="mr-2" alt="logo basicum"></a>
+            <a class="navbar-brand brand-logo-mini" href="{{ url('/') }}"><img src="img/logo4.png" alt="logo"></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -284,7 +288,7 @@
         </div>
 
         {{--botonera de la izquierda--}}
-        <nav class="sidebar sidebar-offcanvas position-sticky sticky-top" id="sidebar">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">
@@ -301,7 +305,7 @@
                     </a>
                     <div class="collapse" id="ui-basic">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="terceros">Terceros</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ route('terceros') }}">Terceros</a></li>
                             <li class="nav-item"> <a class="nav-link" href="archivos">Archivos</a></li>
                             <li class="nav-item"> <a class="nav-link" href="dominios">Dominios / Alojamientos</a></li>
                             <li class="nav-item"> <a class="nav-link" href="recursos">Recursos</a></li>
@@ -448,7 +452,7 @@
 
 
     <!-- partial -->
-    </div>
+
 <!-- main-panel ends -->
 
 <!-- partial:partials/_footer.html -->
@@ -480,7 +484,13 @@
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="js/dashboard.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!-- End custom js for this page-->
+<script type="text/javascript">
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+    });
+</script>
 <script>
 
     (function($) {
@@ -521,3 +531,4 @@
 </script>
 </body>
 </html>
+@endif

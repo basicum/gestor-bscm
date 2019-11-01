@@ -28345,7 +28345,7 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-brand-wrapper {
-  background: #ffffff;
+  background: #212529;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
@@ -28374,9 +28374,9 @@ div.tagsinput span.tag a {
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand img {
-  width: calc(237px - 130px);
+  /*width: calc(237px - 130px);*/
   max-width: 100%;
-  height: 34px;
+  /*height: 34px;*/
   margin: auto;
   vertical-align: middle;
 }
@@ -28485,7 +28485,7 @@ div.tagsinput span.tag a {
   padding: 0;
 }
 .ti-calendar{
-  color:#ff;
+  color=#ff;
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .input-group .input-group-text i, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search .asColorPicker-wrap .input-group-text i {
