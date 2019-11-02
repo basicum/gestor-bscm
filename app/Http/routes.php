@@ -17,7 +17,8 @@
 
 Route::auth();
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('terceros', 'TercerosController@todosTerceros')->name('terceros');
+Route::get('dominios', 'DominiosController@todosDominios')->name('dominios');
 Route::get('/nota{id}', 'EventosController@eliminar' )->name('notas.update');
 Route::get('/nuevanota', 'EventosController@crearNota' )->name('notas.crear');

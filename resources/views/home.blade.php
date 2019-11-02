@@ -99,15 +99,15 @@
                 <div class="col-md-7 grid-margin stretch-card">
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-title mb-0">Últimas Facturas</p>
+                            <p class="card-title mb-0">Facturas Pendientes</p>
                             <div class="table-responsive">
-                                <table class="table table-striped table-borderless table-hover ">
+                                <table id="order-listing" class="table table-striped table-borderless table-hover ">
                                     <thead>
                                     <tr>
-                                        <th>Núm</th>
+                                        <th>Factura</th>
                                         <th>Estado</th>
                                         <th>Cliente</th>
-                                        <th>Precio</th>
+                                        <th>Importe</th>
                                         <th>Día</th>
 
                                     </tr>
@@ -407,11 +407,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="http://www.urbanui.com/justdo/template/demo/vertical-boxed/index.html#detailedReports" role="button" data-slide="prev">
+                                <a class="carousel-control-prev" href="#detailedReports" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
-                                <a class="carousel-control-next" href="http://www.urbanui.com/justdo/template/demo/vertical-boxed/index.html#detailedReports" role="button" data-slide="next">
+                                <a class="carousel-control-next" href="#detailedReports" role="button" data-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                 </a>

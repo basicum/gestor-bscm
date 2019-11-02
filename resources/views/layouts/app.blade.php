@@ -16,14 +16,16 @@
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pruebaStylos.css">
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+
     <!-- endinject -->
     <link rel="shortcut icon" href="favicon.png">
     <style type="text/css">/* Chart.js */
         @keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style>
 </head>
-<body class="sidebar-fixed">
+<body class="sidebar-fixed sidebar-dark">
 <div class="loader"></div>
 <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
@@ -36,21 +38,40 @@
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                 <span class="ti-layout-grid2"></span>
             </button>
-            <ul class="navbar-nav mr-lg-2">
+            <ul class="navbar-nav mr-lg-4">
                 <li class="nav-item nav-search d-none d-lg-block">
                     {{--TODO rango de fechas --}}
-                    <div class="row">
-                        <div id="datepicker-popup" class="input-group date datepicker">
-                            <span style="color: #eaeaf1">Contar desde</span>
-
-
-                            <input type="text" name="desde" class="form-control datepicker" value="{{$ayer->format('d/m/Y') }}">
-                                <span class="input-group-addon input-group-append ">
-                                <span class="ti-calendar "></span>
-                                </span>
-
-                        </div>
-                    </div>
+                    <button type="button" class="btn btn-dark btn-lg btn-block">
+                        <i class="ti-user"></i>
+                        Clientes
+                    </button>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-lg-4">
+                <li class="nav-item nav-search d-none d-lg-block">
+                    {{--TODO rango de fechas --}}
+                    <button type="button" class="btn btn-dark btn-lg btn-block">
+                        <i class="ti-alarm-clock"></i>
+                        Tareas
+                    </button>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-lg-4">
+                <li class="nav-item nav-search d-none d-lg-block">
+                    {{--TODO rango de fechas --}}
+                    <button type="button" class="btn btn-dark btn-lg btn-block">
+                        <i class="ti-file"></i>
+                        Facturas
+                    </button>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-lg-4">
+                <li class="nav-item nav-search d-none d-lg-block">
+                    {{--TODO rango de fechas --}}
+                    <button type="button" class="btn btn-dark btn-lg btn-block">
+                        <i class="ti-money"></i>
+                        Tesorería
+                    </button>
                 </li>
             </ul>
             <ul class="navbar-nav navbar-nav-right">
@@ -83,6 +104,7 @@
                         <a href="proyectos">Ver todos los proyectos <i class="m-icon-swapright"></i></a>
                     </div>
                 </li>
+
                 {{--Aviso Ordenes de trabajo--}}
                 <li class="nav-item dropdown">
                     <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
@@ -290,8 +312,8 @@
         {{--botonera de la izquierda--}}
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
             <ul class="nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">
+                <li class="nav-item ">
+                    <a class="nav-link" href="{{ route('home') }}">
                         <i class="ti-home menu-icon"></i>
                         <span class="menu-title">Inicio</span>
                     </a>
@@ -307,7 +329,7 @@
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="{{ route('terceros') }}">Terceros</a></li>
                             <li class="nav-item"> <a class="nav-link" href="archivos">Archivos</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="dominios">Dominios / Alojamientos</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ route('dominios') }}">Dominios / Alojamientos</a></li>
                             <li class="nav-item"> <a class="nav-link" href="recursos">Recursos</a></li>
 
                         </ul>
@@ -325,7 +347,7 @@
                             <li class="nav-item"> <a class="nav-link" href="aviso_dominio">Avisos</a></li>
                             <li class="nav-item"> <a class="nav-link" href="aceptar_dominio">Aceptación</a></li>
                             <li class="nav-item"> <a class="nav-link" href="facturar_dominio">Facturar</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="renovacion_dominios">Renovar</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="renovacion_dominio">Renovar</a></li>
 
                         </ul>
                     </div>
@@ -426,7 +448,7 @@
                     <div class="collapse" id="general-pages">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="informe_clientes"> Clientes </a></li>
-                            <li class="nav-item"> <a class="nav-link" href="informe_dominios"> Dominios </a></li>
+                            <li class="nav-item"> <a class="nav-link" href="informe_dominio"> Dominios </a></li>
                             <li class="nav-item"> <a class="nav-link" href="informe_presupuestos"> Presupuestos </a></li>
                             <li class="nav-item"> <a class="nav-link" href="informe_proyectos"> Proyectos </a></li>
                             <li class="nav-item"> <a class="nav-link" href="informes_actividad"> Actividad </a></li>
@@ -469,21 +491,30 @@
 </div>
 <!-- plugins:js -->
 <script src="js/vendor.bundle.base.js"></script>
-<!-- endinject -->
-<!-- Plugin js for this page -->
-<script src="js/Chart.min.js"></script>
-<!-- End plugin js for this page -->
-<!--inject:js -->
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/dataTables.bootstrap4.js"></script>
 <script src="js/off-canvas.js"></script>
 <script src="js/hoverable-collapse.js"></script>
 <script src="js/template.js"></script>
 <script src="js/settings.js"></script>
-{{--<script src="js/todolist.js"></script>--}}
+<script src="js/todolist.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="js/Chart.min.js"></script>
+<script src="js/data-table.js"></script>
+
+
+<!-- End plugin js for this page -->
+<!--inject:js -->
+
+
 <script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/formpickers.js"></script>
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="js/dashboard.js"></script>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <!-- End custom js for this page-->
 <script type="text/javascript">
