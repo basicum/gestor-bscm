@@ -160,7 +160,7 @@
                                     <li>
                                         <div class="form-check form-check-flat">
                                             <label class="form-check-label">
-                                                <input class="checkbox" type="checkbox">
+                                                <input class="checkbox " type="checkbox" >
                                                 {{ $nota->Descripcion }}
                                                 <i class="input-helper"></i></label>
                                         </div>
@@ -174,7 +174,7 @@
                                     <form action="{{ route('notas.crear') }}" style="width: 260px;"  method="GET">
 
 
-                                        <input type="text" name="Descripcion" style="background: #f8f9fa; padding: 20px;" placeholder="Nueva Cosa que hacer">
+                                        <input type="text" class="form-control" name="Descripcion" style="background: #2b2e4c; padding: 10px;" placeholder="Nueva Cosa que hacer">
                                         <button class="btn btn-warning rounded-0 text-white">Añadir</button>
                                         <input type="hidden" name="idUser" value="{{ Auth::user()->id }}">
                                         <input type="hidden" name="Tipo" value="1">

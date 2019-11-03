@@ -13952,8 +13952,8 @@ input[type="button"].btn-block {
     color: #6c757d;
     pointer-events: none;
     cursor: auto;
-    background-color: #8b8d91;
-    border-color: #dee2e6;
+    background-color: #1a1f26;
+    border-color: #000000;
 }
 
 .pagination-lg .page-link, .pagination-lg .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .pagination-lg a,
@@ -23488,7 +23488,7 @@ dl li {
 /* Pagination */
 .pagination .page-item .page-link, .jsgrid .jsgrid-pager .page-item .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a,
 .jsgrid .jsgrid-pager .jsgrid-pager-page a {
-    border-color: #424351;
+    border-color: #1e1e2f;
     color: #ffffff;
     font-size: .875rem;
     -webkit-transition-duration: 0.3s;

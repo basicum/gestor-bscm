@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee32e0ed-8f7a-4e4d-9da6-ab0f8cbe69ba" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DominiosController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/dominios.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TercerosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TercerosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/pruebaStylos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/pruebaStylos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/themify-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/themify-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dominios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dominios.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/terceros.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/terceros.blade.php" afterDir="false" />
@@ -39,23 +35,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="51" selection-start-line="29" selection-end-line="54" selection-end-column="51" />
+            <state relative-caret-position="313">
+              <caret line="527" column="28" selection-start-line="527" selection-start-column="25" selection-end-line="527" selection-end-column="28" />
               <folding>
-                <element signature="e#39#52#0#PHP" expanded="true" />
+                <element signature="e#4323#4341#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <file leaf-file-name="themify-icons.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/themify-icons.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="416" column="57" selection-start-line="416" selection-start-column="57" selection-end-line="416" selection-end-column="57" />
+            <state relative-caret-position="480">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pruebaStylos.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/pruebaStylos.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="937">
+              <caret line="23490" column="25" selection-start-line="23490" selection-start-column="25" selection-end-line="23490" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -69,15 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DominiosController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DominiosController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,24 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dominios.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/dominios.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
-              <folding>
-                <element signature="e#2119#2139#0#HTML" expanded="true" />
-                <element signature="e#2372#2392#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="terceros.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/terceros.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="52" column="105" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="105" />
+            <state relative-caret-position="180">
+              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
               <folding>
                 <element signature="e#265#283#0#HTML" expanded="true" />
                 <element signature="e#314#344#0#HTML" expanded="true" />
@@ -135,8 +118,12 @@
       <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="132" column="46" selection-start-line="122" selection-start-column="47" selection-end-line="132" selection-end-column="46" />
+            <state relative-caret-position="81">
+              <caret line="154" column="47" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
+              <folding>
+                <element signature="e#10409#10430#0#HTML" expanded="true" />
+                <element signature="e#10576#10619#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,6 +133,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" selection-start-line="5" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dominios.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/dominios.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -161,7 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fac</find>
       <find>proyecto</find>
       <find>total_proyectos</find>
       <find>presupuestos</find>
@@ -189,8 +184,9 @@
       <find>aLengthMenu</find>
       <find>show</find>
       <find>Ini</find>
-      <find>tercero</find>
       <find>Detail</find>
+      <find>Cos</find>
+      <find>tercero</find>
     </findStrings>
     <replaceStrings>
       <replace>https://www.basicum.es/gestion/assets/</replace>
@@ -236,26 +232,26 @@
         <option value="$PROJECT_DIR$/public/js/settings.js" />
         <option value="$PROJECT_DIR$/public/js/todolist.js" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/public/css/themify-icons.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EventosController.php" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/js/jquery.dataTables.js" />
         <option value="$PROJECT_DIR$/public/js/data-table.js" />
         <option value="$PROJECT_DIR$/resources/views/pruebaStylos.css" />
-        <option value="$PROJECT_DIR$/public/css/pruebaStylos.css" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TercerosController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DominiosController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/terceros.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dominios.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/themify-icons.css" />
+        <option value="$PROJECT_DIR$/public/css/pruebaStylos.css" />
       </list>
     </option>
   </component>
@@ -348,8 +344,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="496" />
-    <option name="y" value="23" />
+    <option name="x" value="34" />
+    <option name="y" value="25" />
     <option name="width" value="1423" />
     <option name="height" value="1172" />
   </component>
@@ -401,6 +397,17 @@
               <item name="Basicum" type="b2602c69:ProjectViewProjectNode" />
               <item name="Basicum" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Basicum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basicum" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Basicum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basicum" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Basicum" type="b2602c69:ProjectViewProjectNode" />
@@ -479,12 +486,12 @@
       <updated>1570450540493</updated>
       <workItem from="1570450543854" duration="78325000" />
       <workItem from="1571123946002" duration="857000" />
-      <workItem from="1571732379965" duration="51489000" />
+      <workItem from="1571732379965" duration="54631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130671000" />
+    <option name="totallyTimeSpent" value="133813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,7 +503,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="496" y="23" width="1423" height="1172" extended-state="0" />
+    <frame x="34" y="25" width="1423" height="1172" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.499391" weight="0.32794678" />
@@ -508,7 +515,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4975404" weight="0.35171103" />
       <window_info anchor="right" id="Remote Host" order="4" weight="0.1908284" />
       <window_info id="Gulp" order="4" side_tool="true" weight="0.3295699" />
-      <window_info content_ui="combo" id="Project" order="1" side_tool="true" weight="0.2230268" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" side_tool="true" visible="true" weight="0.2230268" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32123893" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32889733" />
@@ -699,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/themify-icons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -792,29 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/pruebaStylos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="10069" column="19" selection-start-line="10069" selection-start-column="19" selection-end-line="10069" selection-end-column="19" />
-          <folding>
-            <element signature="e#311133#311367#2" expanded="true" />
-            <element signature="e#318799#318952#1" expanded="true" />
-            <element signature="e#318994#319228#1" expanded="true" />
-            <element signature="e#324251#324527#2" expanded="true" />
-            <element signature="e#332275#332428#1" expanded="true" />
-            <element signature="e#332470#332746#1" expanded="true" />
-            <element signature="e#459636#459823#2" expanded="true" />
-            <element signature="e#460084#460220#2" expanded="true" />
-            <element signature="e#460681#460814#2" expanded="true" />
-            <element signature="e#462203#462356#1" expanded="true" />
-            <element signature="e#476244#476474#2" expanded="true" />
-            <element signature="e#477510#477746#2" expanded="true" />
-            <element signature="e#521143#521320#2" expanded="true" />
-            <element signature="e#521377#521554#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -825,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DominiosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -839,24 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="416" column="57" selection-start-line="416" selection-start-column="57" selection-end-line="416" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/servidor/arrays.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="132" column="46" selection-start-line="122" selection-start-column="47" selection-end-line="132" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -877,10 +833,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="154" column="47" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
+          <folding>
+            <element signature="e#10409#10430#0#HTML" expanded="true" />
+            <element signature="e#10576#10619#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/terceros.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="52" column="105" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="105" />
+        <state relative-caret-position="180">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
           <folding>
             <element signature="e#265#283#0#HTML" expanded="true" />
             <element signature="e#314#344#0#HTML" expanded="true" />
@@ -897,12 +871,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/dominios.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
+        <state relative-caret-position="87">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="527" column="28" selection-start-line="527" selection-start-column="25" selection-end-line="527" selection-end-column="28" />
           <folding>
-            <element signature="e#2119#2139#0#HTML" expanded="true" />
-            <element signature="e#2372#2392#0#HTML" expanded="true" />
+            <element signature="e#4323#4341#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/themify-icons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/pruebaStylos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="23490" column="25" selection-start-line="23490" selection-start-column="25" selection-end-line="23490" selection-end-column="25" />
         </state>
       </provider>
     </entry>

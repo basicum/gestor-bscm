@@ -10,7 +10,7 @@
 
 
                 <div class="row">
-                    <div class="col-12"><h2 style="float:left">Listado Dominios y Alojamientos</h2><button class="btn btn-warning rounded-0 text-white" style="float:right; margin-right:50%;">Añadir Nuevo</button>
+                    <div class="col-12"><h2 style="float:left">Dominios y Alojamientos</h2><button class="btn btn-warning rounded-0 text-white" style="float:right; margin-right:50%;">Añadir Nuevo</button>
 
                         <div class="table-responsive">
                             <div id="order-listing_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">

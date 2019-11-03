@@ -1,5 +1,5 @@
 @if (Auth::guest())
-    <li><a href="{{ url('/login') }}">Login</a></li>
+    <li><a href="{{ url('login') }}">Login</a></li>
     {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
 @else
 <!DOCTYPE html>
@@ -38,42 +38,48 @@
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                 <span class="ti-layout-grid2"></span>
             </button>
+            {{--<ul class="navbar-nav mr-lg-4">--}}
+                {{--<li class="nav-item nav-search d-none d-lg-block">--}}
+                    {{--TODO rango de fechas --}}
+                    {{--<button type="button" class="btn btn-dark btn-lg btn-block">--}}
+                        {{--<i class="ti-user"></i>--}}
+                        {{--Clientes--}}
+                    {{--</button>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+            {{--<ul class="navbar-nav mr-lg-4">--}}
+                {{--<li class="nav-item nav-search d-none d-lg-block">--}}
+                    {{--TODO rango de fechas --}}
+                    {{--<button type="button" class="btn btn-dark btn-lg btn-block">--}}
+                        {{--<i class="ti-alarm-clock"></i>--}}
+                        {{--Tareas--}}
+                    {{--</button>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+            {{--<ul class="navbar-nav mr-lg-4">--}}
+                {{--<li class="nav-item nav-search d-none d-lg-block">--}}
+                    {{--TODO rango de fechas --}}
+                    {{--<button type="button" class="btn btn-dark btn-lg btn-block">--}}
+                        {{--<i class="ti-file"></i>--}}
+                        {{--Facturas--}}
+                    {{--</button>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
             <ul class="navbar-nav mr-lg-4">
                 <li class="nav-item nav-search d-none d-lg-block">
                     {{--TODO rango de fechas --}}
-                    <button type="button" class="btn btn-dark btn-lg btn-block">
-                        <i class="ti-user"></i>
-                        Clientes
-                    </button>
+                   Rango de Fechas. Desde
                 </li>
             </ul>
-            <ul class="navbar-nav mr-lg-4">
-                <li class="nav-item nav-search d-none d-lg-block">
-                    {{--TODO rango de fechas --}}
-                    <button type="button" class="btn btn-dark btn-lg btn-block">
-                        <i class="ti-alarm-clock"></i>
-                        Tareas
-                    </button>
-                </li>
-            </ul>
-            <ul class="navbar-nav mr-lg-4">
-                <li class="nav-item nav-search d-none d-lg-block">
-                    {{--TODO rango de fechas --}}
-                    <button type="button" class="btn btn-dark btn-lg btn-block">
-                        <i class="ti-file"></i>
-                        Facturas
-                    </button>
-                </li>
-            </ul>
-            <ul class="navbar-nav mr-lg-4">
-                <li class="nav-item nav-search d-none d-lg-block">
-                    {{--TODO rango de fechas --}}
-                    <button type="button" class="btn btn-dark btn-lg btn-block">
-                        <i class="ti-money"></i>
-                        Tesorería
-                    </button>
-                </li>
-            </ul>
+            <div class="input-group input-daterange d-flex align-items-center" style="width: 50%">
+                <form class="form-inline" id="commentForm" method="get" action="#" novalidate="novalidate">
+                <input type="text" class="form-control" value="{{$ayer}}">
+                <div class="input-group-addon mx-4">hasta</div>
+                <input type="text" class="form-control" value="{{$ayer}}">
+                    <div class="input-group-addon mx-4">  </div>
+                    <button type="submit" class="btn btn-primary mb-2">Cambiar</button>
+                </form>
+            </div>
             <ul class="navbar-nav navbar-nav-right">
                 {{--Aviso de proyectos--}}
                 <li class="nav-item dropdown">
