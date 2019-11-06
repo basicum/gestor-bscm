@@ -22,3 +22,7 @@ Route::get('terceros', 'TercerosController@todosTerceros')->name('terceros');
 Route::get('dominios', 'DominiosController@todosDominios')->name('dominios');
 Route::get('/nota{id}', 'EventosController@eliminar' )->name('notas.update');
 Route::get('/nuevanota', 'EventosController@crearNota' )->name('notas.crear');
+
+
+Route::get('/archivos','UploadFileController@index');
+Route::post('/archivos','UploadFileController@showUploadFile');

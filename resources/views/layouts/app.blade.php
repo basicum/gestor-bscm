@@ -68,10 +68,11 @@
             <ul class="navbar-nav mr-lg-4">
                 <li class="nav-item nav-search d-none d-lg-block">
                     {{--TODO rango de fechas --}}
-                   Rango de Fechas. Desde
+                   Desde
                 </li>
             </ul>
-            <div class="input-group input-daterange d-flex align-items-center" style="width: 50%">
+
+            <div class="input-group input-daterange d-flex align-items-lg-center">
                 <form class="form-inline" id="commentForm" method="get" action="#" novalidate="novalidate">
                 <input type="text" class="form-control" value="{{$ayer}}">
                 <div class="input-group-addon mx-4">hasta</div>
@@ -80,6 +81,7 @@
                     <button type="submit" class="btn btn-primary mb-2">Cambiar</button>
                 </form>
             </div>
+
             <ul class="navbar-nav navbar-nav-right">
                 {{--Aviso de proyectos--}}
                 <li class="nav-item dropdown">
