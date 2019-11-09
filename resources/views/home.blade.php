@@ -164,7 +164,7 @@
                                                 {{ $nota->Descripcion }}
                                                 <i class="input-helper"></i></label>
                                         </div>
-                                        <div style="horiz-align:right"> <a href="{{ route('notas.update', $nota->id) }}">(Borrar)</a></div>
+                                        <div style="horiz-align:right"> <a href="{{ route('notas.eliminar', $nota->id) }}">(Borrar)</a></div>
 
                                     </li>
                                    @endforeach

@@ -34,7 +34,7 @@
                                             @foreach ($terceros as $tercero)
                                                 <tr>
                                                     <td>
-                                                        <button class="btn btn-outline-primary">Ver</button>
+                                                        <a href="modif_tercero-{{ $tercero->id }}"><button class="btn btn-outline-primary">Ver</button></a>
                                                     </td>
                                                     <td>{{utf8_decode($tercero->abrevi)}}</td>
                                                     <td>

@@ -40,4 +40,32 @@ class TercerosController extends Controller
 
         $this->misclientes = $clientes_user;
     }
+    public function visualizaTercero($id){
+
+        $terceroSeleccionado = DB::table('TERCEROS')
+            ->where('id', $id)
+            ->get();
+        $this->terceroSeleccionado=$terceroSeleccionado;
+        $terceroSeleccionado=$terceroSeleccionado;
+        return view('modif_tercero', compact('terceroSeleccionado'));
+    }
+    public function actualizarTercero($id){
+
+        $notaActualizada = DB::table('TERCEROS')
+            ->where('id', $id)
+            ->update(['Estado' => 0]);
+        $this->terceroActualizada=$terceroActualizada;
+        return back();
+    }
+    public function crearTercero(Request $request){
+        $request->all();
+        $notaNueva = DB::insert
+        ('insert into QueHacer (Tipo,Descripcion,Estado,idUser) values (?, ?, ?, ?)',
+            [$request->Tipo,$request->Descripcion, $request->Estado, $request->idUser]
+        );
+
+        $this->terceroNuevo=$terceroNuevo;
+        return back();
+
+    }
 }

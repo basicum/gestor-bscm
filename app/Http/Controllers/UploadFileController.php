@@ -30,11 +30,11 @@ class UploadFileController extends Controller {
 //        echo '<br>';
 //
 //        //Display File Mime Type
-//        echo 'File Mime Type: '.$file->getMimeType();
+       // $fileType = $file->getMimeType();
 
         //Move Uploaded File
         $destinationPath = 'uploads';
         $file->move($destinationPath,$file->getClientOriginalName());
-        return view('archivos');
+        return view('archivos') ;
     }
 }
