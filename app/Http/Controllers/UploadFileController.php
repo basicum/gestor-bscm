@@ -34,7 +34,12 @@ class UploadFileController extends Controller {
 
         //Move Uploaded File
         $destinationPath = 'uploads';
-        $file->move($destinationPath,$file->getClientOriginalName());
-        return view('archivos') ;
+        if(empty($file)) {
+
+            return view('archivos');
+        }else{
+            $file->move($destinationPath, $file->getClientOriginalName());
+            return view('archivos');
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Http\Request;
 
 class TercerosController extends Controller
 {
@@ -49,13 +49,41 @@ class TercerosController extends Controller
         $terceroSeleccionado=$terceroSeleccionado;
         return view('modif_tercero', compact('terceroSeleccionado'));
     }
-    public function actualizarTercero($id){
 
-        $notaActualizada = DB::table('TERCEROS')
+    public function actualizarTercero(Request $request,$id){
+
+
+        $terceroActualizada = DB::table('TERCEROS')
             ->where('id', $id)
-            ->update(['Estado' => 0]);
-        $this->terceroActualizada=$terceroActualizada;
-        return back();
+            ->update([
+                        'abrevi'=>$request->abrevi,
+                        'clcaptacion'=>$request->clcaptacion,
+                        'clactividad'=>$request->clactividad,
+                        'cladministrador'=>$request->cladministrador,
+                        'razonsocial'=>$request->razonsocial,
+                        'alaatencion'=>$request->alaatencion,
+                        'direccion'=>$request->direccion,
+                        'codpostal'=>$request->codpostal,
+                        'poblacion'=>$request->poblacion,
+                        'provincia'=>$request->provincia,
+                        'pais'=>$request->pais,
+                        'ctabanco'=>$request->ctabanco,
+                        'cif'=>$request->cif,
+                        'contacto'=>$request->contacto,
+                        'email'=>$request->email,
+                        'web'=>$request->web,
+                        'telefonofijo'=>$request->telefonofijo,
+                        'telefonomovil'=>$request->telefonomovil,
+                        'clformapago'=>$request->clformapago,
+                        'estado'=>$request->estado,
+                        'observaciones'=>$request->observaciones,
+                        'dmacreacion'=>date('Y-m-d', strtotime($request->dmacreacion)),
+                        'cliva'=>$request->cliva,
+                        'saldoterce'=>$request->saldoterce
+
+            ]);
+        $this-> terceroActualizada= $terceroActualizada;
+        return back()->with('mensaje', 'Tercero Actualizado!');
     }
     public function crearTercero(Request $request){
         $request->all();

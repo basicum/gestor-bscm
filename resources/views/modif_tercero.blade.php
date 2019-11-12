@@ -15,7 +15,8 @@
     $tip_presuesta = array("0"=>"Pendiente","1" => "Enviado","2" => "Aceptado","3" => "Rechazado","9"=>"Anulado");
 
     $tip_admin = array("1"=> "Usuario de Pruebas","2"=> "Al","3" => "Fer","4" => "Rob");
-$tip_iva =array("0"=>"NO", "1"=>"SI");
+
+    $tip_iva =array("0"=>"NO", "1"=>"SI");
 @endphp
 <div class="main-panel">
 <div class="content-wrapper">
@@ -24,11 +25,16 @@ $tip_iva =array("0"=>"NO", "1"=>"SI");
     <div class="card">
         <div class="card-body">
             <h3 class="form-section">Datos del Tercero</h3>
-
+            @if (session('mensaje'))
+                <div class="alert alert-success">
+                    {{ session('mensaje') }}
+                </div>
+            @endif
                     <!-- Empieza el Formulario para recoger datos-->
                     @foreach ($terceroSeleccionado as $tercero)
-                    <form class="form-sample" name="creapresu" method="POST" action="editar_tercero.php"><!--formulario con el método POST-->
-                        <p class="card-description">El tercero que vas a editar es para <b> {{utf8_decode($tercero->abrevi)}} </b></p>
+                    <form class="form-sample" name="creapresu" method="POST" action="{{route('terceros.update', $tercero->id)}}">
+                        @csrf
+                        <p class="card-description">El tercero que vas a editar es para <b> {{$tercero->abrevi}} </b></p>
 
 
                         <div class="row">
@@ -36,7 +42,7 @@ $tip_iva =array("0"=>"NO", "1"=>"SI");
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><font style=color:#757575;>Nombre</font></label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="abrevi" value="{{utf8_decode($tercero->abrevi)}}">
+                                        <input type="text" class="form-control" name="abrevi" value="{{$tercero->abrevi}}">
                                         
                                     </div>
                                 </div>
@@ -114,7 +120,7 @@ $tip_iva =array("0"=>"NO", "1"=>"SI");
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label" ><font style=color:#757575;>Razón Social</font></label>
                                     <div class="col-sm-9">
-                                        <input type="text"  name="razonsocial" class="form-control" value="{{utf8_decode($tercero->razonsocial)}}">
+                                        <input type="text"  name="razonsocial" class="form-control" value="{{$tercero->razonsocial}}">
                                     </div>
                                 </div>
                                     </div>
@@ -329,6 +335,7 @@ $tip_iva =array("0"=>"NO", "1"=>"SI");
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label"><font style=color:#757575;>Descripción</font></label>
                                     <div class="col-sm-9">
+
                                         <textarea class="span12 form-control" name="observaciones" rows="6">{{utf8_decode($tercero->observaciones)}}</textarea>
                                     </div>
                                 </div>
@@ -376,7 +383,7 @@ $tip_iva =array("0"=>"NO", "1"=>"SI");
                         <div class="form-actions">
                             <button type="submit" class="btn btn-primary mr-2">Grabar</button>
 
-                            <a href="#">   <button type="button" class="btn btn-light">Cancelar</button></a>
+                            <a href="{{route('terceros')}}">   <button type="button" class="btn btn-light">Cancelar</button></a>
                         </div>
 
                         <input type="hidden" name="usuario" value="1">

@@ -16,8 +16,9 @@
                         @php
                         echo Form::open(array('url' => '/archivos','files'=>'true'));
 
-                        echo Form::file('image');
-                        echo Form::submit('Subir');
+                        echo Form::file('image', array('class' => 'form-control col-md-6 p-3'));
+                        echo '<br />';
+                        echo Form::submit('Subir', array('class' => 'btn btn-info'));
                         echo Form::close();
                         @endphp
                         </div>

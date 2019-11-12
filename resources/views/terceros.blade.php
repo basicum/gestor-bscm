@@ -34,9 +34,9 @@
                                             @foreach ($terceros as $tercero)
                                                 <tr>
                                                     <td>
-                                                        <a href="modif_tercero-{{ $tercero->id }}"><button class="btn btn-outline-primary">Ver</button></a>
+                                                        <a href="modif_tercero_{{ $tercero->id }}"><button class="btn btn-outline-primary">Ver</button></a>
                                                     </td>
-                                                    <td>{{utf8_decode($tercero->abrevi)}}</td>
+                                                    <td>{{$tercero->abrevi}}</td>
                                                     <td>
                                                         @if($tercero->estado==1)
 
