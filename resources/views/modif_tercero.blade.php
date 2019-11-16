@@ -161,7 +161,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label" ><font style=color:#757575;>Provincia</font></label>
                                     <div class="col-sm-9">
-                                        <input type="text"  name="provincia" class="form-control" value="{{utf8_decode($tercero->provincia)}}">
+                                        <input type="text"  name="provincia" class="form-control" value="{{$tercero->provincia}}">
                                     </div>
                                 </div>
                                 </div>
