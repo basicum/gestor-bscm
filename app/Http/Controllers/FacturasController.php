@@ -9,6 +9,18 @@ use Carbon\Carbon;
 
 class FacturasController extends Controller
 {
+    public function todasFacturas(){
+
+        $facturas = DB::table('FactCLTE_Tot')
+
+            ->join('TERCEROS as t', 'FactCLTE_Tot.idcliente', '=', 't.id')
+            ->select('t.id as idTercero', 'FactCLTE_Tot.id as idFactura', 'FactCLTE_Tot.*','t.*')
+            ->orderBy('facdma', 'desc')
+            ->get();
+        $this->facTotal = $facturas;
+        return view('facturas_clientes', compact('facturas'));
+    }
+
     //
     public function facturasDesde($desde){
 
